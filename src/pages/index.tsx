@@ -9,14 +9,23 @@ export default function Home() {
 
   function notify() {
     if (Notification.permission === "granted") {
-      new Notification('Hora de ir ali', {
-        body: "Vá lá beber água."
-      })
+      navigator.serviceWorker.getRegistration().then(function(reg) {
+      var options = {
+        body: 'Vá lá beber água!',
+        vibrate: [100, 50, 100],
+        data: {
+          dateOfArrival: Date.now(),
+          primaryKey: 1
+        }
+      };
+      reg.showNotification('Hora de ir ali', options);
+    });
     } else {
       Notification.requestPermission();
     }
     setTime(timeDefault)
   }
+
   useEffect(() => {
     Notification.requestPermission();
   },[])
