@@ -12,6 +12,8 @@ export default function Home() {
       new Notification('Hora de ir ali', {
         body: "Vá lá beber água."
       })
+    } else {
+      Notification.requestPermission();
     }
     setTime(timeDefault)
   }
