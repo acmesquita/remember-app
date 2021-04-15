@@ -1,21 +1,25 @@
-# Progressive Web App Example
+# Remember APP
 
-This example uses [`next-pwa`](https://github.com/shadowwalker/next-pwa) to create a progressive web app (PWA) powered by [Workbox](https://developers.google.com/web/tools/workbox/).
+Um aplicativo para lembrarmos de beber água a cada x tempos.
 
-## Deploy your own
+## Utilização do APP
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+Acesse https://cathy-remember.vercel.app e instale o na sua tela inicial
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/progressive-web-app&project-name=progressive-web-app&repository-name=progressive-web-app)
+## Contribuições
 
-## How to use
+Fork o projeto e abra Pull Requestes seguindo o template
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+```md
+## Motivação
 
-```bash
-npx create-next-app --example progressive-web-app progressive-web-app
-# or
-yarn create next-app --example progressive-web-app progressive-web-app
+_Descreva a motivação da atualização_
+
+## Proposta
+
+_Descreva a proposta de atualização_
+
+## Como testar
+
+_Descreva um passo a passo de como testar_
 ```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
