@@ -28,6 +28,16 @@ export default function Home() {
 
   useEffect(() => {
     Notification.requestPermission();
+    const voiceBR = speechSynthesis.getVoices().filter(voice => voice.lang.includes('BR'))[0]
+
+    function play() {
+      const text = document.getElementById('time').innerText
+      const utterance = new SpeechSynthesisUtterance(`Faltam 00:${text} para beber outro copão d'água`)
+      utterance.voice = voiceBR
+      speechSynthesis.speak(utterance)
+    }
+
+    window.addEventListener('focus', play)
   },[])
 
   useEffect(()=>{
@@ -44,7 +54,7 @@ export default function Home() {
   return (
     <main className={styles.container}>
       <h1 className={styles.title}>Próxima atividade</h1>
-      <p className={styles.time}>{min}:{sec}</p>
+      <p id="time" className={styles.time}>{min}:{sec}</p>
     </main>
   )
 }
