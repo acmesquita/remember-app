@@ -53,7 +53,7 @@ export default function Home() {
 
   return (
     <main className={styles.container}>
-      <h1 className={styles.title}>Próxima atividade</h1>
+      <h1 className={styles.title}>Próximo Gole D'água</h1>
       <p id="time" className={styles.time}>{min}:{sec}</p>
     </main>
   )
