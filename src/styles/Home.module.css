@@ -1,18 +1,58 @@
-.container {
+/* =========================================== */
+/* Light */
+
+.containerLight {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   gap: 1.5rem;
+  background-color: #fff;
 }
 
-.title {
+.containerLight .title {
   font-family: sans-serif;
   font-size: 2.5rem;
+  color: #060608;
 }
 
-.time {
+.containerLight .time {
   font-family: monospace;
   font-size: 3.5rem;
+  color: #060608;
+}
+
+.containerLight svg {
+  color: #060608;
+}
+
+
+/* =========================================== */
+/* Dark */
+
+.containerDark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 1.5rem;
+  background-color: #060608;
+}
+
+.containerDark .title {
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.containerDark .time {
+  font-family: monospace;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.containerDark svg {
+  color: #fff;
 }

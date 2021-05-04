@@ -1,9 +1,10 @@
-import Head from 'next/head'
-import '../styles/globals.css'
+import Head from "next/head";
+import { MainProvider } from "../context/mainContext";
+import "../styles/globals.css";
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <MainProvider>
       <Head>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -31,7 +32,8 @@ export default function MyApp({ Component, pageProps }) {
         <link rel="apple-touch-icon" href="/apple-icon.png"></link>
         <meta name="theme-color" content="#317EFB" />
       </Head>
+
       <Component {...pageProps} />
-    </>
-  )
+    </MainProvider>
+  );
 }
