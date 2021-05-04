@@ -1,0 +1,35 @@
+.container {
+  position: absolute;
+  top: 0;
+  padding: 30px 30px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title {
+  font-family: sans-serif;
+  font-size: 2.5rem;
+}
+
+.time {
+  font-family: monospace;
+  font-size: 3.5rem;
+}
+
+.icons {
+  margin-left: 35px;
+  cursor: pointer;
+}
+
+/* Popover */
+
+.popoverBody {
+  padding: 8px 20px;
+  background: rgb(16 17 27 / 90%);
+  color: #fff;
+  font-family: system-ui;
+  border: 1px solid #731be2;
+  font-weight: 100;
+  font-size: 14px;
+}
